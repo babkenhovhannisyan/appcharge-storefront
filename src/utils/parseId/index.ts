@@ -1,1 +1,1 @@
-export { parseId } from './parseId';
+export { parseId } from "./parseId";

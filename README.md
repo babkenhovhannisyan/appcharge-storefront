@@ -21,26 +21,31 @@ A modern and responsive e-commerce website built with Next.js, TypeScript, and T
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/babkenhovhannisyan/appcharge-storefront.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd storefront
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    ```
 
 4. Create a `.env` file:
+
    ```bash
    cp .env.example .env
    ```
 
 5. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -85,9 +90,10 @@ The project uses shadcn/ui components for a consistent and modern look:
 
 ## 🔄 Data Fetching
 
-The application uses the __Fake Store API__ to fetch product data. Key features include:
+The application uses the **Fake Store API** to fetch product data. Key features include:
 
 - **Category Filtering**:
+
   - Dynamic category loading
   - URL-based category selection
 
@@ -95,10 +101,9 @@ The application uses the __Fake Store API__ to fetch product data. Key features 
   - Visual star rating display
   - Responsive design
 
-
 ## 🚀 Deployment
 
-The application is deployed on Vercel: 
+The application is deployed on Vercel:
 [View Demo](https://appcharge-storefront.vercel.app/)
 
 ### Fake Store API Constraints
@@ -108,7 +113,6 @@ The application is deployed on Vercel:
    - Current implementation fetches 20 products
    - This approach works but isn't optimal for large product catalogs
 
-
 ## 🙏 Acknowledgments
 
 - [Fake Store API](https://fakestoreapi.com/) for providing the product data
@@ -116,9 +120,9 @@ The application is deployed on Vercel:
 - [Next.js](https://nextjs.org/) for the amazing framework
 
 ## 🔮 Future Improvements
- 
- - 🔄 Implement __infinite scroll pagination__ with __virtual list__ rendering for enhanced performance with large datasets when __API__ supports it
- - 🔐 Add a secure user authentication system
- - 💬 Add a comprehensive product reviews and comments system
- - 🔍 Implement advanced search filters with multiple parameters
- - ❤️ Add a product wishlist feature for a personalized shopping experience
+
+- 🔄 Implement **infinite scroll pagination** with **virtual list** rendering for enhanced performance with large datasets when **API** supports it
+- 🔐 Add a secure user authentication system
+- 💬 Add a comprehensive product reviews and comments system
+- 🔍 Implement advanced search filters with multiple parameters
+- ❤️ Add a product wishlist feature for a personalized shopping experience

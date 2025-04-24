@@ -1,3 +1,3 @@
-export * from './types';
-export * from './products';
-export { fakerAPI } from './fakerAPI';
+export * from "./types";
+export * from "./products";
+export { fakerAPI } from "./fakerAPI";
