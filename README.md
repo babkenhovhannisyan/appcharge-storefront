@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Storefront E-commerce Website
 
-## Getting Started
+A modern and responsive e-commerce website built with Next.js, TypeScript, and Tailwind CSS. This project showcases a clean and user-friendly interface for browsing and purchasing products.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🛍️ Product browsing
+- ⭐ Product rating system with visual star ratings
+- 📱 Fully responsive design for all devices
+- 🚀 Fast and optimized performance
+- 🎨 Modern UI built with shadcn/ui components
+- 🔍 Dynamic Open Graph (OG) metadata for each product
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/babkenhovhannisyan/appcharge-storefront.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd storefront
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env` file:
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **API**: Fake Store API
+
+## 📁 Project Structure
+
+```
+storefront/
+├── src/
+│   ├── app/                    # Next.js app directory
+│   │   ├── page.tsx           # Home page
+│   │   ├── products/          # Product routes
+│   │   └── layout.tsx         # Root layout
+│   ├── components/            # React components
+│   │   ├── ProductCard/      # Product card component
+│   │   ├── StarRating/       # Star rating component
+│   │   └── UI/               # shadcn/ui components
+│   ├── api/                  # API integration
+│   │   └── fakerAPI/        # Fake Store API client
+│   └── utils/                  # Utility functions
+├── public/                   # Static assets
+└── package.json             # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 UI Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project uses shadcn/ui components for a consistent and modern look:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Button - For actions and navigation
+- Card - For product display
+- And more...
 
-## Learn More
+## 🔄 Data Fetching
 
-To learn more about Next.js, take a look at the following resources:
+The application uses the __Fake Store API__ to fetch product data. Key features include:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Category Filtering**:
+  - Dynamic category loading
+  - URL-based category selection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Rating System**:
+  - Visual star rating display
+  - Responsive design
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application is deployed on Vercel: 
+[View Demo](https://appcharge-storefront.vercel.app/)
+
+### Fake Store API Constraints
+
+1. **Pagination**:
+   - The API doesn't support native pagination
+   - Current implementation fetches 20 products
+   - This approach works but isn't optimal for large product catalogs
+
+
+## 🙏 Acknowledgments
+
+- [Fake Store API](https://fakestoreapi.com/) for providing the product data
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Next.js](https://nextjs.org/) for the amazing framework
+
+## 🔮 Future Improvements
+ 
+ - 🔄 Implement __infinite scroll pagination__ with __virtual list__ rendering for enhanced performance with large datasets when __API__ supports it
+ - 🔐 Add a secure user authentication system
+ - 💬 Add a comprehensive product reviews and comments system
+ - 🔍 Implement advanced search filters with multiple parameters
+ - ❤️ Add a product wishlist feature for a personalized shopping experience
